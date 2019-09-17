@@ -7,7 +7,7 @@
 - `service/*.md` 服务内容以及报价
 - `equipments/*.md` 直播设备档案
 - `live/*.md` 直播技术文档
-- `dev/*.md` 开发与运维技术文档
+- [`dev/*.md`](dev/readme.md) 开发与运维技术文档
 - `summary/*.md` 总结
 - `others/*` 其他文档（通常是比较老的文档）
 
