@@ -1,8 +1,18 @@
 # 服务器和网站
 
-- **一般来说，提前一小时或以上打开直播间开始推测试视频，保证nplive的可用性**
+一般来说，提前一小时或以上打开直播间开始推测试视频，保证NPLive的可用性
 
-### live.bitnp.net转发到bilibili设置
+## General
+
+当前NPLive主站的后端SRS3.0（RTMP）+ Tornado框架开发的弹幕 + MongoDB日志，前端为Dplayer，支持网页端管理的NPLive-NG后端正在开发中。
+
+当前服务器使用docker-compose进行部署。
+
+主站主要通过HTTP-FLV提供直播服务，端口8009, 8010, 8011, 8012为四个SRS Edge实例，提供FLV视频流，另提供HLS视频源，在80端口下。
+
+NPLive-NG部署后此页将更新。
+
+## live.bitnp.net转发到bilibili设置
 
 - **注意:这个仅仅在推b站时才需要操作这一部分,只推nplive不用管这里**
 - **这里需要熟悉docker的linux大佬ssh操作(血的教训)**
@@ -49,11 +59,5 @@ usage ./login.sh username [password]
 
 --> bilibili推流设置结束
 ```
-
-### jgsy.bitnp.net
-
-jgsy.bitnp.net部署了旧系统，旧系统在OBS断线时，需要ssh登录服务器，重启nginx-rtmp
-
-(等待填坑)
 
 ***
