@@ -6,10 +6,9 @@
 
 |||
 |-|-|
-|主站|rtmp://live.bitnp.net/nplive|
-|当前ipv4地址|rtmp://10.1.139.100/nplive|
-|当前ipv6地址|rtmp://[2001:da8:204:2a05::100]/nplive|
-|~~精工书院学科素养~~|~~rtmp://jgsy.bitnp.net/nplive~~|
+|主站|rtmp://live.bitnp.net:19350/nplive/livestream|
+|当前ipv4地址|rtmp://10.1.139.123:19350/nplive/livestream|
+|当前ipv6地址|rtmp://[2001:da8:204:2a05::123]:19350/nplive/livestream|
 
 流密钥均为livestream
 
@@ -21,6 +20,8 @@
 
 编码器优先选择 QSV 或 AMD 或 NVENC，硬件加速编码，也可以用x264软压,CPU占用较高
 
+HLS减小延迟：输出模式改为高级，设置关键帧间隔为2秒或3秒，以减少播放延迟。
+
 录制视频可以修改一下录制视频质量，然后选择更高的码率，在推流码率低时使用
 
 ### 视频(右下角->设置->视频)
@@ -29,7 +30,7 @@
 
 输出分辨率 1080p(1920*1080)
 
-FPS 30
+FPS 30 或 60，60fps仅在网络状态好的时候才能打开，请根据具体直播负载觉得是否使用。
 
 ### 添加视频捕获设备
 
