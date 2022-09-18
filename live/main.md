@@ -14,7 +14,7 @@
 
 1. 安装必要的驱动及直播软件(详见直播群,群文件)
 
-- 采集卡驱动[点此下载](https://www.yuan.com.tw/download/driver/ub530-series-driver.zip)
+- 目前协会有一个新的采集卡和旧的采集卡，新采集卡是免驱的；旧采集卡驱动[点此下载](https://www.yuan.com.tw/support/download/driver/ub530-series-driver.zip)
 - OBS[官网在此](https://obsproject.com/)
 
 - 对于OBS的参数设置问题，参见[OBS配置](./obsconf.md)
